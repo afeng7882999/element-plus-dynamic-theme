@@ -1,0 +1,12 @@
+@use './mixins/config' as *;
+@use './common/var' as *;
+
+.#{$dark-mode} {
+  img {
+    filter: $image-bright-dark;
+  }
+  
+  svg {
+    filter: $image-bright-dark;
+  }
+}

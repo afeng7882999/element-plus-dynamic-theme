@@ -1,0 +1,27 @@
+@use 'mixins/mixins' as *;
+@use 'common/var' as *;
+
+@include b(descriptions) {
+  @include e(label) {
+    &.#{$namespace}-descriptions__cell.is-bordered-label {
+      font-weight: bold;
+      color: var(--el-text-color-secondary);
+      background: var(--el-descriptions-item-bordered-label-background);
+    }
+
+    &:not(.is-bordered-label) {
+      margin-right: 10px;
+    }
+  }
+
+  @include e(content) {
+  }
+}
+
+@include b-theme(descriptions) {
+  @include e-theme(label) {
+    &.#{$namespace}-descriptions__cell.is-bordered-label {
+      background: var(--el-color-gray-1);
+    }
+  }
+}

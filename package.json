@@ -1,0 +1,30 @@
+{
+  "name": "element-plus-dynamic-theme",
+  "version": "1.0.0",
+  "description": "A Element Plus theme can be changed dynamically, based on css variable",
+  "main": "theme-chalk/index.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afeng7882999/element-plus-dynamic-theme.git"
+  },
+  "keywords": [
+    "element-plus",
+    "element",
+    "theme"
+  ],
+  "author": {
+    "name": "afeng7882999",
+    "email": "afeng7882999@163.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afeng7882999/element-plus-dynamic-theme/issues"
+  },
+  "homepage": "https://github.com/afeng7882999/element-plus-dynamic-theme#readme",
+  "dependencies": {
+    "color-string": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/color-string": "^1.5.0"
+  }
+}
