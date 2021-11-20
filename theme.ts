@@ -7,30 +7,17 @@ export type Theme = Record<string, string>
 export const CUSTOM_THEME = {
     '--el-color-white': '#ffffff',
     '--el-color-black': '#000000',
-    '--el-color-primary': '#dcdddd',
-    '--el-color-primary-light-8': '#dcdddd',
-    '--el-color-primary-light-9': '#dcdddd',
-    '--el-color-success': '#dcdddd',
-    '--el-color-warning': '#dcdddd',
-    '--el-color-danger': '#dcdddd',
-    '--el-color-error': '#dcdddd',
-    '--el-color-info': '#dcdddd',
-    '--el-text-color-primary': '#dcdddd',
-    '--el-text-color-regular': '#dcdddd',
-    '--el-text-color-secondary': '#dcdddd',
-    '--el-text-color-placeholder': '#dcdddd',
-    '--el-scrollbar-background-color': '#dcdddd',
-    '--el-background-color-base': '#ffffff',
-    '--el-border-color-base': '#dcdddd',
-    '--el-border-color-light': '#dcdddd',
-    '--el-border-color-lighter': '#dcdddd',
-    '--el-border-color-extra-light': '#dcdddd',
-    '--el-body-background-color': '#ffffff',
-    '--el-app-tags-back-color': '#ffffff',
-    '--el-app-title-back-color': '#ffffff',
-    '--el-sidebar-back-color': '#dcdddd',
-    '--el-sidebar-active-color': '#dcdddd',
-    '--el-sidebar-active-text-color': '#dcdddd'
+    '--el-color-primary': '#579ddb',
+    '--el-color-success': '#4caf50',
+    '--el-color-warning': '#ff9800',
+    '--el-color-danger': '#f44034',
+    '--el-color-error': '#f44034',
+    '--el-color-info': '#9e9e9e',
+    '--el-text-color-regular': 'rgba(#000000, 0.85)',
+    '--el-background-color-base': '#F5F7FA',
+    '--el-border-color-base': '#dcdfe6',
+    '--fd-sidebar-back-color': '#343a40',
+    '--fd-sidebar-active-color': '#579ddb'
 }
 
 // 默认暗色主题
@@ -49,9 +36,9 @@ export const DARK_THEME_DEFAULT = {
     '--el-border-color-lighter': 'rgba(134, 136, 140, 1)',
     '--el-border-color-extra-light': 'rgba(103, 104, 108, 1)',
     '--el-border-color-hover': 'rgba(227, 229, 235, 1)',
-    '--el-body-background-color': '#2B3034',
-    '--el-app-tags-back-color': '#454D55',
-    '--el-app-title-back-color': '#454D55'
+    '--fd-body-background-color': '#2B3034',
+    '--fd-app-tags-back-color': '#454D55',
+    '--fd-app-title-back-color': '#454D55'
 }
 
 // 默认直角主题
@@ -95,36 +82,36 @@ export const DEFAULT_THEMES: Theme[] = [
         '--el-border-color-lighter': 'rgba(134, 136, 140, 1)',
         '--el-border-color-extra-light': 'rgba(103, 104, 108, 1)',
         '--el-border-color-hover': 'rgba(227, 229, 235, 1)',
-        '--el-body-background-color': '#2B3034',
-        '--el-app-tags-back-color': '#454D55',
-        '--el-app-title-back-color': '#454D55',
-        '--el-sidebar-back-color': 'rgba(28, 30, 51, 1)',
-        '--el-sidebar-active-color': '#579ddb',
-        '--el-sidebar-active-hover-color': '#579ddb'
+        '--fd-body-background-color': '#2B3034',
+        '--fd-app-tags-back-color': '#454D55',
+        '--fd-app-title-back-color': '#454D55',
+        '--fd-sidebar-back-color': 'rgba(28, 30, 51, 1)',
+        '--fd-sidebar-active-color': '#579ddb',
+        '--fd-sidebar-active-hover-color': '#579ddb'
     },
     {
         name: '火焰',
-        '--el-sidebar-back-color': 'rgba(72, 51, 66, 1)',
-        '--el-sidebar-active-color': 'rgba(203, 163, 99, 1)',
-        '--el-sidebar-active-hover-color': 'rgba(203, 163, 99, 1)',
+        '--fd-sidebar-back-color': 'rgba(72, 51, 66, 1)',
+        '--fd-sidebar-active-color': 'rgba(203, 163, 99, 1)',
+        '--fd-sidebar-active-hover-color': 'rgba(203, 163, 99, 1)',
         '--el-color-primary': '#D96A3A',
         '--el-color-danger': '#C8473B',
         '--el-color-error': '#C8473B',
         '--el-color-warning': '#D09A0C',
         '--el-color-success': '#52955B'
-        // '--el-body-background-color': '#f9f5f0'
+        // '--fd-body-background-color': '#f9f5f0'
     },
     {
         name: '月光',
-        '--el-sidebar-back-color': 'rgba(28, 30, 51, 1)',
-        '--el-sidebar-active-color': 'rgba(174, 149, 119, 1)',
-        '--el-sidebar-active-hover-color': 'rgba(174, 149, 119, 1)',
+        '--fd-sidebar-back-color': 'rgba(28, 30, 51, 1)',
+        '--fd-sidebar-active-color': 'rgba(174, 149, 119, 1)',
+        '--fd-sidebar-active-hover-color': 'rgba(174, 149, 119, 1)',
         '--el-color-primary': '#314671',
         '--el-color-danger': '#C8473B',
         '--el-color-error': '#C8473B',
         '--el-color-warning': '#D09A0C',
         '--el-color-success': '#52955B',
-        '--el-body-background-color': '#efeef5'
+        '--fd-body-background-color': '#efeef5'
     },
     {
         name: '糖果',
@@ -135,9 +122,9 @@ export const DEFAULT_THEMES: Theme[] = [
         '--el-color-danger': '#d9352c',
         '--el-color-error': '#d9352c',
         '--el-color-info': '#9e9e9e',
-        '--el-sidebar-back-color': '#612a54',
-        '--el-sidebar-active-color': '#fb7471',
-        '--el-sidebar-active-hover-color': '#fb7471',
+        '--fd-sidebar-back-color': '#612a54',
+        '--fd-sidebar-active-color': '#fb7471',
+        '--fd-sidebar-active-hover-color': '#fb7471',
         '--el-border-radius-base': '20px',
         '--el-border-radius-small': '20px'
     },
@@ -145,9 +132,9 @@ export const DEFAULT_THEMES: Theme[] = [
         name: '军旅',
         'sharp-mode': 'true',
         '--el-color-primary': '#244b4a',
-        '--el-sidebar-back-color': '#3c5945',
-        '--el-sidebar-active-color': '#79a598',
-        '--el-sidebar-active-hover-color': '#79a598',
+        '--fd-sidebar-back-color': '#3c5945',
+        '--fd-sidebar-active-color': '#79a598',
+        '--fd-sidebar-active-hover-color': '#79a598',
         '--el-border-radius-base': '0px',
         '--el-border-radius-small': '0px'
     }

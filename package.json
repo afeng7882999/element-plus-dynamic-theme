@@ -5,7 +5,8 @@
   "files": [
     "color.ts",
     "theme.ts",
-    "theme-chalk"
+    "theme-chalk",
+    "README"
   ],
   "main": "theme-chalk/index.scss",
   "repository": {
