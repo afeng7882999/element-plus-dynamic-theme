@@ -1,6 +1,6 @@
 # element-plus-dynamic-theme
 
-![project](README/project.png)
+![project](https://github.com/afeng7882999/element-plus-dynamic-theme/blob/main/README/project.png)
 
 > One Element Plus theme, can be changed dynamically, based on CSS variable
 
@@ -21,6 +21,11 @@ See https://github.com/afeng7882999/element-plus-dynamic-theme-example
 * Provide light/dark, sharp/round theme mode.
 * Provide several embedded themes.
 * Provide theme switching tools.
+
+## Version
+
+The version of element-plus-dynamic-theme is same with element-plus version on which it is based. 
+(e.g. v1.2.x is based on version 1.2.0-beta.x of element-plus)
 
 ## License
 
