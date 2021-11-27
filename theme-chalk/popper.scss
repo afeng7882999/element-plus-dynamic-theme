@@ -1,6 +1,7 @@
 @use 'mixins/mixins' as *;
 @use 'mixins/var' as *;
 @use 'common/var' as *;
+@use 'mixins/config' as *;
 
 @include b(popper) {
   @include set-component-css-var('popper', $popper);
@@ -122,4 +123,8 @@
       }
     }
   }
+}
+
+@include b-theme(popper, $sharp-mode) {
+  border-radius: 0;
 }
