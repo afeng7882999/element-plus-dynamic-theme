@@ -14,10 +14,8 @@ export const CUSTOM_THEME = {
     '--el-color-error': '#f44034',
     '--el-color-info': '#9e9e9e',
     '--el-text-color-regular': 'rgba(#000000, 0.85)',
-    '--el-background-color-base': '#F5F7FA',
-    '--el-border-color-base': '#dcdfe6',
-    '--fd-sidebar-back-color': '#343a40',
-    '--fd-sidebar-active-color': '#579ddb'
+    '--el-bg-color': '#F5F7FA',
+    '--el-border-color-base': '#dcdfe6'
 }
 
 // 默认暗色主题
@@ -30,15 +28,13 @@ export const DARK_THEME_DEFAULT = {
     '--el-text-color-secondary': 'rgba(255, 255, 255, 0.4)',
     '--el-text-color-placeholder': 'rgba(255, 255, 255, 0.3)',
     '--el-font-color-disabled-base': 'rgba(80, 80, 80, 1)',
-    '--el-background-color-base': 'rgba(43, 48, 52, 1)',
+    '--el-bg-color': 'rgba(43, 48, 52, 1)',
     '--el-border-color-base': 'rgba(182, 184, 190, 1)',
     '--el-border-color-light': 'rgba(162, 164, 169, 1)',
     '--el-border-color-lighter': 'rgba(134, 136, 140, 1)',
     '--el-border-color-extra-light': 'rgba(103, 104, 108, 1)',
     '--el-border-color-hover': 'rgba(227, 229, 235, 1)',
-    '--fd-body-background-color': '#2B3034',
-    '--fd-app-tags-back-color': '#454D55',
-    '--fd-app-title-back-color': '#454D55'
+    '--el-body-background-color': '#2B3034'
 }
 
 // 默认直角主题
@@ -76,18 +72,13 @@ export const DEFAULT_THEMES: Theme[] = [
         '--el-text-color-secondary': 'rgba(255, 255, 255, 0.4)',
         '--el-text-color-placeholder': 'rgba(255, 255, 255, 0.3)',
         '--el-font-color-disabled-base': 'rgba(80, 80, 80, 1)',
-        '--el-background-color-base': 'rgba(43, 48, 52, 1)',
+        '--el-bg-color': 'rgba(43, 48, 52, 1)',
         '--el-border-color-base': 'rgba(182, 184, 190, 1)',
         '--el-border-color-light': 'rgba(162, 164, 169, 1)',
         '--el-border-color-lighter': 'rgba(134, 136, 140, 1)',
         '--el-border-color-extra-light': 'rgba(103, 104, 108, 1)',
         '--el-border-color-hover': 'rgba(227, 229, 235, 1)',
-        '--fd-body-background-color': '#2B3034',
-        '--fd-app-tags-back-color': '#454D55',
-        '--fd-app-title-back-color': '#454D55',
-        '--fd-sidebar-back-color': 'rgba(28, 30, 51, 1)',
-        '--fd-sidebar-active-color': '#579ddb',
-        '--fd-sidebar-active-hover-color': '#579ddb'
+        '--el-body-background-color': '#2B3034'
     },
     {
         name: '火焰',
@@ -99,7 +90,6 @@ export const DEFAULT_THEMES: Theme[] = [
         '--el-color-error': '#C8473B',
         '--el-color-warning': '#D09A0C',
         '--el-color-success': '#52955B'
-        // '--fd-body-background-color': '#f9f5f0'
     },
     {
         name: '月光',
@@ -111,7 +101,7 @@ export const DEFAULT_THEMES: Theme[] = [
         '--el-color-error': '#C8473B',
         '--el-color-warning': '#D09A0C',
         '--el-color-success': '#52955B',
-        '--fd-body-background-color': '#efeef5'
+        '--el-body-background-color': '#efeef5'
     },
     {
         name: '糖果',
@@ -122,19 +112,13 @@ export const DEFAULT_THEMES: Theme[] = [
         '--el-color-danger': '#d9352c',
         '--el-color-error': '#d9352c',
         '--el-color-info': '#9e9e9e',
-        '--fd-sidebar-back-color': '#612a54',
-        '--fd-sidebar-active-color': '#fb7471',
-        '--fd-sidebar-active-hover-color': '#fb7471',
         '--el-border-radius-base': '20px',
         '--el-border-radius-small': '20px'
     },
     {
-        name: '军旅',
+        name: '烟柳',
         'sharp-mode': 'true',
         '--el-color-primary': '#244b4a',
-        '--fd-sidebar-back-color': '#3c5945',
-        '--fd-sidebar-active-color': '#79a598',
-        '--fd-sidebar-active-hover-color': '#79a598',
         '--el-border-radius-base': '0px',
         '--el-border-radius-small': '0px'
     }
@@ -236,14 +220,6 @@ export function themeProcess(theme: Theme, useDefaultDark = false): Theme {
         theme['--el-color-info-light-8'] = cluster[8]
         theme['--el-color-info-light-9'] = cluster[9]
     }
-    if (theme['--el-sidebar-back-color']) {
-        rgba = colorString.get(theme['--el-sidebar-back-color'])!.value
-        if (theme['--el-sidebar-background-img'] && theme['--el-sidebar-background-img'] !== 'none') {
-            theme['--el-sidebar-background-color'] = colorString.to.rgb(rgba)
-        } else {
-            theme['--el-sidebar-background-color'] = colorString.to.rgb(rgba.slice(0, 3), rgba[3] * 0.77)
-        }
-    }
 
     return theme
 }
@@ -251,7 +227,7 @@ export function themeProcess(theme: Theme, useDefaultDark = false): Theme {
 /**
  * 暗色主题
  */
-function setThemeDark(theme: Theme, useDefault: boolean): Theme {
+function setThemeDark(theme: Theme, useDefault?: boolean): Theme {
     const dark = useDefault
         ? Object.assign({}, theme, DARK_THEME_DEFAULT)
         : Object.assign({}, theme)

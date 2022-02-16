@@ -15,8 +15,8 @@
   }
 
   &:active {
-    background: var(--el-button-active-background-color);
-    border-color: var(--el-button-active-border-color);
+    background: var(--el-button-active-bg-color2);
+    border-color: var(--el-button-active-border-color2);
     color: var(--el-color-white);
     outline: none;
   }
@@ -36,22 +36,22 @@
 @mixin button-variant($type) {
   &:hover,
   &:focus {
-    background: var(--el-button-hover-color);
-    border-color: var(--el-button-hover-color);
-    color: var(--el-button-font-color);
+    background: var(--el-button-hover-color2);
+    border-color: var(--el-button-hover-color2);
+    color: var(--el-button-text-color2);
   }
 
   &:active {
-    background: var(--el-button-active-background-color);
-    border-color: var(--el-button-active-border-color);
-    color: var(--el-button-active-font-color);
+    background: var(--el-button-active-bg-color2);
+    border-color: var(--el-button-active-border-color2);
+    color: var(--el-button-active-text-color2);
     outline: none;
   }
 
   &.is-active {
-    background: var(--el-button-active-background-color);
-    border-color: var(--el-button-active-border-color);
-    color: var(--el-button-active-font-color);
+    background: var(--el-button-active-bg-color2);
+    border-color: var(--el-button-active-border-color2);
+    color: var(--el-button-active-text-color2);
   }
 
   &.is-disabled {
@@ -66,7 +66,7 @@
   }
 
   &.is-plain {
-    @include button-plain(var(--el-button-background-color), $type);
+    @include button-plain(var(--el-button-bg-color2), $type);
   }
 }
 

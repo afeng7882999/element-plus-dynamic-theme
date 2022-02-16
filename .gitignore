@@ -1,6 +1,11 @@
 .DS_Store
 node_modules
+package-lock.json
 /dist
+
+# example
+/example/node_modules
+/example/package-lock.json
 
 
 # local env files

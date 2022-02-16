@@ -25,7 +25,7 @@ See https://github.com/afeng7882999/element-plus-dynamic-theme-example
 ## Version
 
 The version of element-plus-dynamic-theme is same with element-plus version on which it is based. 
-(e.g. v1.2.x is based on version 1.2.0-beta.y of element-plus). The precise info of version is in tag message.
+(e.g. v2.0.2 is based on version 2.0.2 of element-plus). The precise info of version is in tag message.
 
 ## License
 
