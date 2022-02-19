@@ -2,12 +2,6 @@
   "name": "element-plus-dynamic-theme",
   "version": "2.0.2",
   "description": "A Element Plus theme can be changed dynamically, based on css variable",
-  "files": [
-    "color.ts",
-    "theme.ts",
-    "theme-chalk",
-    "README"
-  ],
   "main": "theme-chalk/index.scss",
   "repository": {
     "type": "git",

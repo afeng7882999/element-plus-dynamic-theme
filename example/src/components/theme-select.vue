@@ -3,7 +3,7 @@
     <el-radio label="默认">默认</el-radio>
     <el-radio label="火焰">火焰</el-radio>
     <el-radio label="暗黑">暗黑</el-radio>
-    <el-radio label="军旅">军旅</el-radio>
+    <el-radio label="烟柳">烟柳</el-radio>
     <el-radio label="糖果">糖果</el-radio>
   </el-radio-group>
 </template>
