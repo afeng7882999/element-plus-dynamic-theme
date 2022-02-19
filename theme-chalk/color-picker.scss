@@ -308,6 +308,7 @@ $color-picker-size: map.merge($common-component-size, $color-picker-size);
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    border-radius: var(--el-border-radius-small);
     width: 100%;
     height: 100%;
   }
