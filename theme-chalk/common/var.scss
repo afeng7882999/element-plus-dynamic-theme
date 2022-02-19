@@ -925,7 +925,7 @@ $popover: map.merge(
     'padding-large': 18px 20px,
     'title-font-size': 16px,
     'title-text-color': var(--el-text-color-primary),
-    'border-radius': var(--el-border-radius-base), // 4px,
+    'border-radius': 4px,
   ),
   $popover
 );
